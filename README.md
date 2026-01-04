@@ -1,6 +1,28 @@
 # @capgo/capacitor-brightness
+ <a href="https://capgo.app/"><img src='https://raw.githubusercontent.com/Cap-go/capgo/main/assets/capgo_banner.png' alt='Capgo - Instant updates for capacitor'/></a>
+
+<div align="center">
+  <h2><a href="https://capgo.app/?ref=plugin_brightness"> ➡️ Get Instant updates for your App with Capgo</a></h2>
+  <h2><a href="https://capgo.app/consulting/?ref=plugin_brightness"> Missing a feature? We'll build the plugin for you 💪</a></h2>
+</div>
 
 Control screen brightness on iOS and Android.
+
+## Why Capacitor Brightness?
+
+The only Capacitor plugin providing **complete brightness control** for both iOS and Android:
+
+- **App-level brightness** - Control brightness for your activity without affecting system settings
+- **System-level brightness** - Modify the global device brightness (Android)
+- **Auto/Manual mode** - Switch between automatic and manual brightness modes (Android)
+- **Permission handling** - Built-in support for WRITE_SETTINGS permission flow
+- **Cross-platform** - Consistent API across iOS and Android
+
+Essential for reading apps, video players, camera apps, and any app needing screen brightness control.
+
+## Documentation
+
+Full documentation available at: https://capgo.app/docs/plugins/brightness/
 
 ## Install
 
@@ -18,6 +40,11 @@ For Android, if you want to modify the system brightness (not just the app brigh
 ```
 
 Note: This permission requires user confirmation through system settings on Android 6.0+.
+
+## Requirements
+
+- iOS: iOS 15+ (uses UIScreen.brightness)
+- Android: API 24+ (uses WindowManager for app brightness, Settings.System for system brightness)
 
 ## API
 

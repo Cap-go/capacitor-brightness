@@ -2,7 +2,7 @@ export interface CapgoBrightnessPlugin {
   /**
    * Get the current brightness level of the device's main screen.
    *
-   * @since 0.0.1
+   * @since 8.0.0
    * @returns A promise that resolves with the current brightness value (0 to 1).
    */
   getBrightness(): Promise<GetBrightnessResult>;
@@ -13,7 +13,7 @@ export interface CapgoBrightnessPlugin {
    * On iOS, the brightness will persist until the device is locked.
    * On Android, the brightness only applies to the current activity.
    *
-   * @since 0.0.1
+   * @since 8.0.0
    * @param options - The brightness options.
    */
   setBrightness(options: SetBrightnessOptions): Promise<void>;
@@ -21,7 +21,7 @@ export interface CapgoBrightnessPlugin {
   /**
    * Get the system-wide screen brightness.
    *
-   * @since 0.0.1
+   * @since 8.0.0
    * @platform Android
    * @returns A promise that resolves with the system brightness value (0 to 1).
    */
@@ -32,7 +32,7 @@ export interface CapgoBrightnessPlugin {
    * Requires WRITE_SETTINGS permission on Android.
    * This also changes the brightness mode to MANUAL.
    *
-   * @since 0.0.1
+   * @since 8.0.0
    * @platform Android
    * @param options - The brightness options.
    */
@@ -42,7 +42,7 @@ export interface CapgoBrightnessPlugin {
    * Get the current system brightness mode (automatic or manual).
    * Requires WRITE_SETTINGS permission on Android.
    *
-   * @since 0.0.1
+   * @since 8.0.0
    * @platform Android
    * @returns A promise that resolves with the current brightness mode.
    */
@@ -52,7 +52,7 @@ export interface CapgoBrightnessPlugin {
    * Set the system brightness mode (automatic or manual).
    * Requires WRITE_SETTINGS permission on Android.
    *
-   * @since 0.0.1
+   * @since 8.0.0
    * @platform Android
    * @param options - The brightness mode options.
    */
@@ -61,7 +61,7 @@ export interface CapgoBrightnessPlugin {
   /**
    * Check if the current activity is using the system-wide brightness value.
    *
-   * @since 0.0.1
+   * @since 8.0.0
    * @platform Android
    * @returns A promise that resolves with whether the activity is using system brightness.
    */
@@ -70,7 +70,7 @@ export interface CapgoBrightnessPlugin {
   /**
    * Reset the brightness setting of the current activity to use the system-wide value.
    *
-   * @since 0.0.1
+   * @since 8.0.0
    * @platform Android
    */
   restoreSystemBrightness(): Promise<void>;
@@ -78,7 +78,7 @@ export interface CapgoBrightnessPlugin {
   /**
    * Check if the Brightness API is available on the current device.
    *
-   * @since 0.0.1
+   * @since 8.0.0
    * @returns A promise that resolves with whether the API is available.
    */
   isAvailable(): Promise<IsAvailableResult>;
@@ -86,7 +86,7 @@ export interface CapgoBrightnessPlugin {
   /**
    * Check user's permissions for accessing system brightness.
    *
-   * @since 0.0.1
+   * @since 8.0.0
    * @returns A promise that resolves with the permission status.
    */
   checkPermissions(): Promise<PermissionStatus>;
@@ -95,7 +95,7 @@ export interface CapgoBrightnessPlugin {
    * Request permissions for accessing system brightness.
    * On Android, this opens the system settings to grant WRITE_SETTINGS permission.
    *
-   * @since 0.0.1
+   * @since 8.0.0
    * @returns A promise that resolves with the permission status.
    */
   requestPermissions(): Promise<PermissionStatus>;
@@ -103,7 +103,7 @@ export interface CapgoBrightnessPlugin {
   /**
    * Get the native plugin version.
    *
-   * @since 0.0.1
+   * @since 8.0.0
    * @returns A promise that resolves with the plugin version.
    */
   getPluginVersion(): Promise<GetPluginVersionResult>;
@@ -112,14 +112,14 @@ export interface CapgoBrightnessPlugin {
 /**
  * Result of getBrightness or getSystemBrightness.
  *
- * @since 0.0.1
+ * @since 8.0.0
  */
 export interface GetBrightnessResult {
   /**
    * The brightness value from 0 to 1.
    * 0 is the minimum brightness, 1 is the maximum brightness.
    *
-   * @since 0.0.1
+   * @since 8.0.0
    */
   brightness: number;
 }
@@ -127,14 +127,14 @@ export interface GetBrightnessResult {
 /**
  * Options for setBrightness or setSystemBrightness.
  *
- * @since 0.0.1
+ * @since 8.0.0
  */
 export interface SetBrightnessOptions {
   /**
    * The brightness value from 0 to 1.
    * 0 is the minimum brightness, 1 is the maximum brightness.
    *
-   * @since 0.0.1
+   * @since 8.0.0
    */
   brightness: number;
 }
@@ -142,13 +142,13 @@ export interface SetBrightnessOptions {
 /**
  * Result of getSystemBrightnessMode.
  *
- * @since 0.0.1
+ * @since 8.0.0
  */
 export interface GetBrightnessModeResult {
   /**
    * The current brightness mode.
    *
-   * @since 0.0.1
+   * @since 8.0.0
    */
   mode: BrightnessMode;
 }
@@ -156,14 +156,14 @@ export interface GetBrightnessModeResult {
 /**
  * Options for setSystemBrightnessMode.
  *
- * @since 0.0.1
+ * @since 8.0.0
  */
 export interface SetBrightnessModeOptions {
   /**
    * The brightness mode to set.
    * Cannot be set to UNKNOWN.
    *
-   * @since 0.0.1
+   * @since 8.0.0
    */
   mode: BrightnessMode;
 }
@@ -171,13 +171,13 @@ export interface SetBrightnessModeOptions {
 /**
  * Result of isUsingSystemBrightness.
  *
- * @since 0.0.1
+ * @since 8.0.0
  */
 export interface IsUsingSystemBrightnessResult {
   /**
    * Whether the current activity is using the system-wide brightness value.
    *
-   * @since 0.0.1
+   * @since 8.0.0
    */
   isUsing: boolean;
 }
@@ -185,13 +185,13 @@ export interface IsUsingSystemBrightnessResult {
 /**
  * Result of isAvailable.
  *
- * @since 0.0.1
+ * @since 8.0.0
  */
 export interface IsAvailableResult {
   /**
    * Whether the Brightness API is available on the current device.
    *
-   * @since 0.0.1
+   * @since 8.0.0
    */
   available: boolean;
 }
@@ -199,13 +199,13 @@ export interface IsAvailableResult {
 /**
  * Permission status result.
  *
- * @since 0.0.1
+ * @since 8.0.0
  */
 export interface PermissionStatus {
   /**
    * Whether the permission to modify system brightness is granted.
    *
-   * @since 0.0.1
+   * @since 8.0.0
    */
   brightness: PermissionState;
 }
@@ -213,13 +213,13 @@ export interface PermissionStatus {
 /**
  * Result of getPluginVersion.
  *
- * @since 0.0.1
+ * @since 8.0.0
  */
 export interface GetPluginVersionResult {
   /**
    * The native plugin version.
    *
-   * @since 0.0.1
+   * @since 8.0.0
    */
   version: string;
 }
@@ -227,25 +227,25 @@ export interface GetPluginVersionResult {
 /**
  * The brightness mode.
  *
- * @since 0.0.1
+ * @since 8.0.0
  */
 export enum BrightnessMode {
   /**
    * The brightness mode is unknown.
    *
-   * @since 0.0.1
+   * @since 8.0.0
    */
   UNKNOWN = 0,
   /**
    * The brightness is automatically adjusted by the system.
    *
-   * @since 0.0.1
+   * @since 8.0.0
    */
   AUTOMATIC = 1,
   /**
    * The brightness is manually set by the user.
    *
-   * @since 0.0.1
+   * @since 8.0.0
    */
   MANUAL = 2,
 }
@@ -253,6 +253,6 @@ export enum BrightnessMode {
 /**
  * Permission state.
  *
- * @since 0.0.1
+ * @since 8.0.0
  */
 export type PermissionState = 'prompt' | 'prompt-with-rationale' | 'granted' | 'denied';

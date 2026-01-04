@@ -81,7 +81,7 @@ Get the current brightness level of the device's main screen.
 
 **Returns:** <code>Promise&lt;<a href="#getbrightnessresult">GetBrightnessResult</a>&gt;</code>
 
-**Since:** 0.0.1
+**Since:** 8.0.0
 
 --------------------
 
@@ -101,7 +101,7 @@ On Android, the brightness only applies to the current activity.
 | ------------- | --------------------------------------------------------------------- | ------------------------- |
 | **`options`** | <code><a href="#setbrightnessoptions">SetBrightnessOptions</a></code> | - The brightness options. |
 
-**Since:** 0.0.1
+**Since:** 8.0.0
 
 --------------------
 
@@ -116,7 +116,7 @@ Get the system-wide screen brightness.
 
 **Returns:** <code>Promise&lt;<a href="#getbrightnessresult">GetBrightnessResult</a>&gt;</code>
 
-**Since:** 0.0.1
+**Since:** 8.0.0
 
 --------------------
 
@@ -135,7 +135,7 @@ This also changes the brightness mode to MANUAL.
 | ------------- | --------------------------------------------------------------------- | ------------------------- |
 | **`options`** | <code><a href="#setbrightnessoptions">SetBrightnessOptions</a></code> | - The brightness options. |
 
-**Since:** 0.0.1
+**Since:** 8.0.0
 
 --------------------
 
@@ -151,7 +151,7 @@ Requires WRITE_SETTINGS permission on Android.
 
 **Returns:** <code>Promise&lt;<a href="#getbrightnessmoderesult">GetBrightnessModeResult</a>&gt;</code>
 
-**Since:** 0.0.1
+**Since:** 8.0.0
 
 --------------------
 
@@ -169,7 +169,7 @@ Requires WRITE_SETTINGS permission on Android.
 | ------------- | ----------------------------------------------------------------------------- | ------------------------------ |
 | **`options`** | <code><a href="#setbrightnessmodeoptions">SetBrightnessModeOptions</a></code> | - The brightness mode options. |
 
-**Since:** 0.0.1
+**Since:** 8.0.0
 
 --------------------
 
@@ -184,7 +184,7 @@ Check if the current activity is using the system-wide brightness value.
 
 **Returns:** <code>Promise&lt;<a href="#isusingsystembrightnessresult">IsUsingSystemBrightnessResult</a>&gt;</code>
 
-**Since:** 0.0.1
+**Since:** 8.0.0
 
 --------------------
 
@@ -197,7 +197,7 @@ restoreSystemBrightness() => Promise<void>
 
 Reset the brightness setting of the current activity to use the system-wide value.
 
-**Since:** 0.0.1
+**Since:** 8.0.0
 
 --------------------
 
@@ -212,7 +212,7 @@ Check if the Brightness API is available on the current device.
 
 **Returns:** <code>Promise&lt;<a href="#isavailableresult">IsAvailableResult</a>&gt;</code>
 
-**Since:** 0.0.1
+**Since:** 8.0.0
 
 --------------------
 
@@ -227,7 +227,7 @@ Check user's permissions for accessing system brightness.
 
 **Returns:** <code>Promise&lt;<a href="#permissionstatus">PermissionStatus</a>&gt;</code>
 
-**Since:** 0.0.1
+**Since:** 8.0.0
 
 --------------------
 
@@ -243,7 +243,7 @@ On Android, this opens the system settings to grant WRITE_SETTINGS permission.
 
 **Returns:** <code>Promise&lt;<a href="#permissionstatus">PermissionStatus</a>&gt;</code>
 
-**Since:** 0.0.1
+**Since:** 8.0.0
 
 --------------------
 
@@ -258,7 +258,7 @@ Get the native plugin version.
 
 **Returns:** <code>Promise&lt;<a href="#getpluginversionresult">GetPluginVersionResult</a>&gt;</code>
 
-**Since:** 0.0.1
+**Since:** 8.0.0
 
 --------------------
 
@@ -272,7 +272,7 @@ Result of getBrightness or getSystemBrightness.
 
 | Prop             | Type                | Description                                                                                 | Since |
 | ---------------- | ------------------- | ------------------------------------------------------------------------------------------- | ----- |
-| **`brightness`** | <code>number</code> | The brightness value from 0 to 1. 0 is the minimum brightness, 1 is the maximum brightness. | 0.0.1 |
+| **`brightness`** | <code>number</code> | The brightness value from 0 to 1. 0 is the minimum brightness, 1 is the maximum brightness. | 8.0.0 |
 
 
 #### SetBrightnessOptions
@@ -281,7 +281,7 @@ Options for setBrightness or setSystemBrightness.
 
 | Prop             | Type                | Description                                                                                 | Since |
 | ---------------- | ------------------- | ------------------------------------------------------------------------------------------- | ----- |
-| **`brightness`** | <code>number</code> | The brightness value from 0 to 1. 0 is the minimum brightness, 1 is the maximum brightness. | 0.0.1 |
+| **`brightness`** | <code>number</code> | The brightness value from 0 to 1. 0 is the minimum brightness, 1 is the maximum brightness. | 8.0.0 |
 
 
 #### GetBrightnessModeResult
@@ -290,7 +290,7 @@ Result of getSystemBrightnessMode.
 
 | Prop       | Type                                                      | Description                  | Since |
 | ---------- | --------------------------------------------------------- | ---------------------------- | ----- |
-| **`mode`** | <code><a href="#brightnessmode">BrightnessMode</a></code> | The current brightness mode. | 0.0.1 |
+| **`mode`** | <code><a href="#brightnessmode">BrightnessMode</a></code> | The current brightness mode. | 8.0.0 |
 
 
 #### SetBrightnessModeOptions
@@ -299,7 +299,7 @@ Options for setSystemBrightnessMode.
 
 | Prop       | Type                                                      | Description                                           | Since |
 | ---------- | --------------------------------------------------------- | ----------------------------------------------------- | ----- |
-| **`mode`** | <code><a href="#brightnessmode">BrightnessMode</a></code> | The brightness mode to set. Cannot be set to UNKNOWN. | 0.0.1 |
+| **`mode`** | <code><a href="#brightnessmode">BrightnessMode</a></code> | The brightness mode to set. Cannot be set to UNKNOWN. | 8.0.0 |
 
 
 #### IsUsingSystemBrightnessResult
@@ -308,7 +308,7 @@ Result of isUsingSystemBrightness.
 
 | Prop          | Type                 | Description                                                             | Since |
 | ------------- | -------------------- | ----------------------------------------------------------------------- | ----- |
-| **`isUsing`** | <code>boolean</code> | Whether the current activity is using the system-wide brightness value. | 0.0.1 |
+| **`isUsing`** | <code>boolean</code> | Whether the current activity is using the system-wide brightness value. | 8.0.0 |
 
 
 #### IsAvailableResult
@@ -317,7 +317,7 @@ Result of isAvailable.
 
 | Prop            | Type                 | Description                                                    | Since |
 | --------------- | -------------------- | -------------------------------------------------------------- | ----- |
-| **`available`** | <code>boolean</code> | Whether the Brightness API is available on the current device. | 0.0.1 |
+| **`available`** | <code>boolean</code> | Whether the Brightness API is available on the current device. | 8.0.0 |
 
 
 #### PermissionStatus
@@ -326,7 +326,7 @@ Permission status result.
 
 | Prop             | Type                                                        | Description                                                    | Since |
 | ---------------- | ----------------------------------------------------------- | -------------------------------------------------------------- | ----- |
-| **`brightness`** | <code><a href="#permissionstate">PermissionState</a></code> | Whether the permission to modify system brightness is granted. | 0.0.1 |
+| **`brightness`** | <code><a href="#permissionstate">PermissionState</a></code> | Whether the permission to modify system brightness is granted. | 8.0.0 |
 
 
 #### GetPluginVersionResult
@@ -335,7 +335,7 @@ Result of getPluginVersion.
 
 | Prop          | Type                | Description                | Since |
 | ------------- | ------------------- | -------------------------- | ----- |
-| **`version`** | <code>string</code> | The native plugin version. | 0.0.1 |
+| **`version`** | <code>string</code> | The native plugin version. | 8.0.0 |
 
 
 ### Type Aliases
@@ -353,8 +353,8 @@ Result of getPluginVersion.
 
 | Members         | Value          | Description                                             | Since |
 | --------------- | -------------- | ------------------------------------------------------- | ----- |
-| **`UNKNOWN`**   | <code>0</code> | The brightness mode is unknown.                         | 0.0.1 |
-| **`AUTOMATIC`** | <code>1</code> | The brightness is automatically adjusted by the system. | 0.0.1 |
-| **`MANUAL`**    | <code>2</code> | The brightness is manually set by the user.             | 0.0.1 |
+| **`UNKNOWN`**   | <code>0</code> | The brightness mode is unknown.                         | 8.0.0 |
+| **`AUTOMATIC`** | <code>1</code> | The brightness is automatically adjusted by the system. | 8.0.0 |
+| **`MANUAL`**    | <code>2</code> | The brightness is manually set by the user.             | 8.0.0 |
 
 </docgen-api>

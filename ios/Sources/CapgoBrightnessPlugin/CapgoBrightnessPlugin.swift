@@ -3,7 +3,7 @@ import UIKit
 
 @objc(CapgoBrightnessPlugin)
 public class CapgoBrightnessPlugin: CAPPlugin, CAPBridgedPlugin {
-    private let pluginVersion: String = "8.0.1"
+    private let pluginVersion: String = "8.0.2"
 
     public let identifier = "CapgoBrightnessPlugin"
     public let jsName = "CapgoBrightness"

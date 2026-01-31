@@ -24,6 +24,17 @@ Essential for reading apps, video players, camera apps, and any app needing scre
 
 Full documentation available at: https://capgo.app/docs/plugins/brightness/
 
+## Compatibility
+
+| Plugin version | Capacitor compatibility | Maintained |
+| -------------- | ----------------------- | ---------- |
+| v8.\*.\*       | v8.\*.\*                | ✅          |
+| v7.\*.\*       | v7.\*.\*                | On demand   |
+| v6.\*.\*       | v6.\*.\*                | ❌          |
+| v5.\*.\*       | v5.\*.\*                | ❌          |
+
+> **Note:** The major version of this plugin follows the major version of Capacitor. Use the version that matches your Capacitor installation (e.g., plugin v8 for Capacitor 8). Only the latest major version is actively maintained.
+
 ## Install
 
 ```bash

@@ -18,7 +18,8 @@ const actions = [
   {
     id: 'set-brightness',
     label: 'Set brightness',
-    description: 'Sets the screen brightness for the current activity. Value should be between 0 and 1.',
+    description:
+      'Sets the screen brightness for the current activity. Value should be between 0 and 1.',
     inputs: [
       { name: 'brightness', label: 'Brightness (0-1)', type: 'number', value: 0.5, step: 0.1 },
     ],
@@ -40,7 +41,8 @@ const actions = [
   {
     id: 'set-system-brightness',
     label: 'Set system brightness',
-    description: 'Sets the system-wide screen brightness (Android only). Requires WRITE_SETTINGS permission.',
+    description:
+      'Sets the system-wide screen brightness (Android only). Requires WRITE_SETTINGS permission.',
     inputs: [
       { name: 'brightness', label: 'Brightness (0-1)', type: 'number', value: 0.5, step: 0.1 },
     ],
@@ -86,7 +88,8 @@ const actions = [
   {
     id: 'is-using-system-brightness',
     label: 'Is using system brightness',
-    description: 'Checks if the current activity is using the system-wide brightness value. Android only.',
+    description:
+      'Checks if the current activity is using the system-wide brightness value. Android only.',
     inputs: [],
     run: async () => {
       return await plugin.isUsingSystemBrightness();
@@ -123,7 +126,8 @@ const actions = [
   {
     id: 'request-permissions',
     label: 'Request permissions',
-    description: 'Requests permission to modify system brightness. On Android, opens system settings.',
+    description:
+      'Requests permission to modify system brightness. On Android, opens system settings.',
     inputs: [],
     run: async () => {
       return await plugin.requestPermissions();

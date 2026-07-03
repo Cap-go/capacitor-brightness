@@ -4,7 +4,7 @@ import pkg from './package.json';
 
 const config: CapacitorConfig = {
   appId: 'app.capgo.brightness',
-  appName: 'Brightness Example',
+  appName: '@capgo/capacitor-brightness',
   webDir: 'dist',
   plugins: {
     SplashScreen: {

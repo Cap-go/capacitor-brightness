@@ -1,12 +1,28 @@
 # @capgo/capacitor-brightness
-<a href="https://capgo.app/"><img src="https://capgo.app/readme-banner.svg?repo=Cap-go/capacitor-brightness" alt="Capgo - Instant updates for Capacitor" /></a>
+
+Read and set screen brightness from your Capacitor app, for example to brighten the screen while a QR code or ticket is shown. On Android you can also control system brightness and its automatic mode.
+
+<a href="https://capgo.app/?ref=plugin_brightness"><img src="https://capgo.app/readme-banner.svg?repo=Cap-go/capacitor-brightness" alt="Capgo - Instant updates for Capacitor" /></a>
 
 <div align="center">
-  <h2><a href="https://capgo.app/?ref=plugin_brightness"> ➡️ Get Instant updates for your App with Capgo</a></h2>
-  <h2><a href="https://capgo.app/consulting/?ref=plugin_brightness"> Missing a feature? We'll build the plugin for you 💪</a></h2>
+  <p><b>Capgo</b>: open-source live updates for Ionic and Capacitor apps. Ship OTA fixes and features instantly, without waiting for app store review.</p>
+  <h2><a href="https://capgo.app/register/?ref=plugin_brightness">➡️ Get started for free</a></h2>
+  <p>14-day unlimited free trial. No credit card required</p>
+  <p><a href="https://capgo.app/consulting/?ref=plugin_brightness">Missing a feature? We'll build the plugin for you 💪</a></p>
 </div>
 
-Control screen brightness on iOS and Android.
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Cap-go/capacitor-brightness/main/assets/github-social-preview.png" alt="@capgo/capacitor-brightness for Capacitor apps" width="300" />
+</p>
+
+## Key features
+
+- **App brightness**: `getBrightness()` and `setBrightness()` for the current screen on iOS and Android.
+- **System brightness**: `getSystemBrightness()` and `setSystemBrightness()` on Android.
+- **Brightness mode**: `getSystemBrightnessMode()` and `setSystemBrightnessMode()` switch between automatic and manual on Android.
+- **Restore**: `restoreSystemBrightness()` hands control back to the system, `isUsingSystemBrightness()` checks the current state.
+- **Permissions**: `checkPermissions()` and `requestPermissions()` for Android system settings access.
+- **Platforms**: iOS and Android. System brightness and mode are Android only. Not available on web.
 
 ## Why Capacitor Brightness?
 

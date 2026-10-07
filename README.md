@@ -20,7 +20,7 @@ Read and set screen brightness from your Capacitor app, for example to brighten 
 - **App brightness**: `getBrightness()` and `setBrightness()` for the current screen on iOS and Android.
 - **System brightness**: `getSystemBrightness()` and `setSystemBrightness()` on Android.
 - **Brightness mode**: `getSystemBrightnessMode()` and `setSystemBrightnessMode()` switch between automatic and manual on Android.
-- **Restore**: `isUsingSystemBrightness()` and `restoreSystemBrightness()` hand control back to the system.
+- **Restore**: `restoreSystemBrightness()` hands control back to the system, `isUsingSystemBrightness()` checks the current state.
 - **Permissions**: `checkPermissions()` and `requestPermissions()` for Android system settings access.
 - **Platforms**: iOS and Android. System brightness and mode are Android only. Not available on web.
 

@@ -1,6 +1,6 @@
 {
   "name": "@capgo/capacitor-brightness",
-  "version": "8.0.23",
+  "version": "8.0.24",
   "description": "Control screen brightness on iOS and Android",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",

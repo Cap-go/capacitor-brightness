@@ -14,7 +14,7 @@ import com.getcapacitor.annotation.Permission;
 @CapacitorPlugin(name = "CapgoBrightness", permissions = {})
 public class CapgoBrightnessPlugin extends Plugin {
 
-    private final String pluginVersion = "8.0.24";
+    private final String pluginVersion = "8.0.25";
     private float savedBrightness = -1f;
 
     @PluginMethod
